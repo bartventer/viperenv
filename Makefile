@@ -7,6 +7,7 @@ GOFMT := gofmt
 GOLINT := golint
 GOVET := go vet
 GOTEST := go test
+GOCOVER := go tool cover
 BINARY := $(PKG_NAME)
 
 # Flags
@@ -15,6 +16,7 @@ GOFMTFLAGS := -s
 GOLINTFLAGS := -set_exit_status
 GOVETFLAGS := -all
 GOTESTFLAGS := -v
+GOVERFLAGS := -html
 
 .PHONY: all
 all: build test
@@ -26,6 +28,11 @@ build:
 .PHONY: test
 test:
 	$(GOTEST) $(GOTESTFLAGS) ./...
+
+.PHONY: cover
+cover:
+	$(GOTEST) $(GOTESTFLAGS) -coverprofile=coverage.out ./...
+	$(GOCOVER) $(GOVERFLAGS) coverage.out
 
 .PHONY: fmt
 fmt:
