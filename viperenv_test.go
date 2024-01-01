@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/bartventer/viperenv"
+	"github.com/bartventer/viperenv/v2"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
 )

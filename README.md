@@ -13,7 +13,7 @@
 To install `viperenv`, use `go get`:
 
 ```sh
-go get github.com/bartventer/viperenv
+go get github.com/bartventer/viperenv/v2
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ import (
     "log"
 
     "github.com/spf13/viper"
-    "github.com/bartventer/viperenv"
+    "github.com/bartventer/viperenv/v2"
 )
 
 type Config struct {
