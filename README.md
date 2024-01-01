@@ -1,6 +1,6 @@
 # viperenv
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/bartventer/viperenv.svg)](https://pkg.go.dev/github.com/bartventer/viperenv)
+[![Go Reference](https://pkg.go.dev/badge/github.com/bartventer/viperenv.svg)](https://pkg.go.dev/github.com/bartventer/viperenv/v2)
 [![Go Report Card](https://goreportcard.com/badge/github.com/bartventer/viperenv)](https://goreportcard.com/report/github.com/bartventer/viperenv)
 [![Coverage Status](https://coveralls.io/repos/github/bartventer/viperenv/badge.svg?branch=master)](https://coveralls.io/github/bartventer/viperenv?branch=master)
 [![Build](https://github.com/bartventer/viperenv/actions/workflows/go.yml/badge.svg)](https://github.com/bartventer/viperenv/actions/workflows/go.yml)
