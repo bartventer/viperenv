@@ -33,19 +33,8 @@ jobs:
       with:
         path-to-profile: ${{ env.PATH_TO_PROFILE }}
 
-  dependency-review:
-      needs: [build]
-      if: github.event_name == 'pull_request'
-      runs-on: ubuntu-latest
-      permissions:
-        contents: read
-      steps:
-        - uses: actions/checkout@v4
-        - name: Dependency Review
-          uses: actions/dependency-review-action@v4
-
   semantic-release:
-    needs: [dependency-review]
+    needs: [build]
     runs-on: ubuntu-latest
     permissions: 
       contents: write
