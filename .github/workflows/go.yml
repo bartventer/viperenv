@@ -38,7 +38,7 @@ jobs:
       - name: Run semantic-release
         if: github.repository == 'bartventer/viperenv' && github.event_name == 'push'
         run: |
-          yarn global add semantic-release
+          yarn global add semantic-release@17
           semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
